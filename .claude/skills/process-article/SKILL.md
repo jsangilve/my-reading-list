@@ -109,7 +109,7 @@ pwd
 
 4. Create the directory if it doesn't exist:
 ```bash
-mkdir -p [working-dir]/YYYY/month-name
+mkdir -p [working-dir]/to-read/YYYY/month-name
 ```
 
 5. Combine all content into the file:
@@ -130,7 +130,7 @@ mkdir -p [working-dir]/YYYY/month-name
 [1-2 sentences explaining what the diagram represents and how to read it]
 ```
 
-6. Write the file to: `[working-dir]/YYYY/month-name/YYYY-MM-DD-author-article-title.md`
+6. Write the file to: `[working-dir]/to-read/YYYY/month-name/YYYY-MM-DD-author-article-title.md`
 
 7. Inform the user: "Saved to: [full path]"
 
@@ -180,5 +180,5 @@ timeline
 - Clean up temp files after validation: `rm -f /tmp/diagram.mmd`
 - Only use Bash for running the validation script and creating directories, nothing else
 - ALWAYS save the output to a file with format: `YYYY-MM-DD-author-article-title-slug.md`
-- Files are stored in a year/month directory structure: `YYYY/month-name/filename.md`
+- Files are stored in a year/month directory structure: `to-read/YYYY/month-name/filename.md`
 - The file MUST be saved to the user's working directory (use `pwd` to get it), NOT the skill directory
