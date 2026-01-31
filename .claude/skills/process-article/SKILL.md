@@ -24,7 +24,7 @@ The user must provide a URL as an argument:
 Use the `/summarize-article` skill with the provided URL to get the article summary:
 - This will produce the TLDR, Key Takeaways, and Summary sections
 
-**CRITICAL: After the summary is generated, you MUST continue with Steps 3-6 below. Do NOT stop after this step. The summary is just the first part of this skill - you still need to generate and validate the diagram, then save everything to a file.**
+**CRITICAL: After the summary is generated, you MUST continue with Steps 3-7 below. Do NOT stop after this step. The summary is just the first part of this skill - you still need to generate and validate the diagram, save everything to a file, and commit/push to git.**
 
 ### Step 3: Analyze for Diagram Type
 
@@ -134,6 +134,27 @@ mkdir -p [working-dir]/to-read/YYYY/month-name
 
 7. Inform the user: "Saved to: [full path]"
 
+### Step 7: Commit and Push
+
+After saving the file, commit it to git and push to the remote repository:
+
+1. Stage the new file:
+```bash
+git add [full-path-to-saved-file]
+```
+
+2. Commit with a descriptive message using the article title:
+```bash
+git commit -m "Add article: [Article Title]"
+```
+
+3. Push to the remote repository:
+```bash
+git push origin main
+```
+
+4. Inform the user: "Committed and pushed to origin/main"
+
 ## Mermaid Syntax Guidelines
 
 ### Flowchart Example
@@ -168,7 +189,7 @@ timeline
 
 ## Important Notes
 
-- **CRITICAL**: After `/summarize-article` completes, CONTINUE with Steps 3-6. Do not stop execution after the summary.
+- **CRITICAL**: After `/summarize-article` completes, CONTINUE with Steps 3-7. Do not stop execution after the summary.
 - Keep diagrams readable: aim for 5-12 nodes maximum
 - Use clear, concise labels (2-4 words per node)
 - Choose the diagram type that best represents the article's structure
