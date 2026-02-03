@@ -27,7 +27,7 @@ Use WebFetch to retrieve the article content with the following prompt:
 Extract and analyze this article. Provide:
 1. The article title
 2. The author (if available)
-3. The publication date (if available, in YYYY-MM-DD format)
+3. IMPORTANT: The publication date (if available, in YYYY-MM-DD format)
 4. The main topic and thesis
 5. All key points and arguments made
 6. Any data, statistics, or evidence presented
